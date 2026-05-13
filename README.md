@@ -28,29 +28,4 @@ Tool          -        Maven
 
 Java Version  -        Java 17 
 
-Project Structure
-employee-management-system/
-├── src/
-│   └── main/
-│       ├── java/com/employee/
-│       │   ├── EmployeeManagementSystemApplication.java   # Main entry point
-│       │   ├── controller/
-│       │   │   └── EmployeeController.java                # MVC Controller
-│       │   ├── model/
-│       │   │   └── Employee.java                          # JPA Entity
-│       │   ├── repository/
-│       │   │   └── EmployeeRepository.java                # JPA Repository
-│       │   └── service/
-│       │       ├── EmployeeService.java                   # Service Interface
-│       │       └── EmployeeServiceImpl.java               # Service Implementation
-│       └── resources/
-│           ├── templates/                                 # Thymeleaf HTML templates
-│           └── application.properties                     # App configuration
-├── pom.xml
-└── README.md
 
-API Endpoints
-MethodURLDescriptionGET/View all employeesGET/addShow add employee formPOST/saveSave a new employeeGET/updateform/{id}Show update form by IDGET/delete/{id}Delete employee by ID
-
-📦 Employee Model
-FieldTypeDescriptionidlongAuto-generated primary keynameStringEmployee full nameemailStringEmployee email addressageStringEmployee agedesignationStringJob title/designation
